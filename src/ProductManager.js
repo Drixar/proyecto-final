@@ -118,7 +118,14 @@ class ProductManager{
                 if (productos[productPos]){
                     productos[productPos] = {
                         id:id,
-                        ...body
+                        title: body.title ? body.title : productos[productPos].title,
+                        description: body.description ? body.description : productos[productPos].description,
+                        code: body.code ? body.code : productos[productPos].code,
+                        price: body.price ? body.price : productos[productPos].price,
+                        status: body.status ? body.status : productos[productPos].status,
+                        stock: body.stock ? body.stock : productos[productPos].stock,
+                        category: body.category ? body.category : productos[productPos].category,                    
+                        thumbnail: body.thumbnail ? body.thumbnail : productos[productPos].thumbnail
                     };
                     await fs.promises.writeFile(this.path.concat('', this.nameFile), JSON.stringify(productos, null, 2))
                     return ['200', "Producto encontrado", productos[productPos]];
