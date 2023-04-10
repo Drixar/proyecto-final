@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Birome",
+    "description": "Birome roja",
+    "code": "028",
+    "price": 85,
+    "status": true,
+    "stock": 12,
+    "category": "Librería",
+    "thumbnail": "http://tiny.cc/9o36vz"
+  },
+  {
+    "id": 2,
+    "title": "Cuaderno",
+    "description": "Cuaderno espiral",
+    "code": "003",
+    "price": 400,
+    "status": true,
+    "stock": 20,
+    "category": "Librería",
+    "thumbnail": "http://tiny.cc/an36vz"
+  }
+]

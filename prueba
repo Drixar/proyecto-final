@@ -1,0 +1,90 @@
+[
+    {
+      "id": 1,
+      "title": "Birome",
+      "description": "Birome Azul",
+      "code": "001",
+      "price": 85,
+      "status": true,
+      "stock": 12,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/7n36vz"
+    },
+    {
+      "id": 2,
+      "title": "Lápiz",
+      "description": "Lápiz HB",
+      "code": "002",
+      "price": 35,
+      "status": true,
+      "stock": 10,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/9n36vz"
+    },
+    {
+      "id": 3,
+      "title": "Cuaderno",
+      "description": "Cuaderno espiral",
+      "code": "003",
+      "price": 400,
+      "status": true,
+      "stock": 20,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/an36vz"
+    },
+    {
+      "id": 4,
+      "title": "Goma",
+      "description": "Goma de Borrar",
+      "code": "004",
+      "price": 50,
+      "status": true,
+      "stock": 15,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/cn36vz"
+    },
+    {
+      "id": 5,
+      "title": "Sacapuntas",
+      "description": "Sacapuntas Metálico",
+      "code": "005",
+      "price": 200,
+      "status": true,
+      "stock": 14,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/dn36vz"
+    },
+    {
+      "id": 6,
+      "title": "Birome",
+      "description": "Birome roja",
+      "code": "006",
+      "price": 85,
+      "status": true,
+      "stock": 12,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/9o36vz"
+    },
+    {
+      "id": 7,
+      "title": "regla",
+      "description": "Regla de Acrílico",
+      "code": "007",
+      "price": 165,
+      "status": true,
+      "stock": 4,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/to36vz"
+    },
+    {
+      "id": 8,
+      "title": "Escuadra",
+      "description": "Escuadra de Acrílico",
+      "code": "008",
+      "price": 195,
+      "status": true,
+      "stock": 2,
+      "category": "Librería",
+      "thumbnail": "http://tiny.cc/uo36vz"
+    }
+  ]
