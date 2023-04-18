@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr class="table-primary">
+      <th scope='col'>ID</th>
+      <th scope='col'>Title</th>
+      <th scope='col'>Price</th>
+      <th scope='col'>thumbnail</th>
+    </tr>
+  </thead>
+<tbody>
+    {{#each products}}
+      <tr>
+        <th scope='row'>{{this.id}}</th>
+        <td>{{this.title}}</td>
+        <td>{{this.price}}</td>
+        <td>
+          <img src={{this.thumbnail}} alt='' width='30' />
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

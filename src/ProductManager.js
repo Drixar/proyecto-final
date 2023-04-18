@@ -67,8 +67,12 @@ class ProductManager{
     getAll = async()=>{
         try {
             //leer el archivo existe
+            // console.log(this.path.concat('', this.nameFile))
+            // console.log(fs.existsSync(this.path.concat('', this.nameFile)))
             if(fs.existsSync(this.path.concat('', this.nameFile))){
-                const contenido = await fs.promises.readFile(this.path.concat('', this.nameFile),"utf8");
+                // console.log(await fs.promises.readFile(this.path.concat('', this.nameFile), 'utf-8'))
+                const contenido = await (fs.promises.readFile(this.path.concat('', this.nameFile), 'utf-8'));
+                // console.log(JSON.parse(contenido))
                 const productos = JSON.parse(contenido);
                 return ['200', "Archivo de Productos leído Correctamente", productos];
             } else{
@@ -85,7 +89,7 @@ class ProductManager{
                 const [status, message, productos] = await this.getAll();
                 const productPos = productos.findIndex(elm=>elm.id === id);
                 if (productos[productPos]){
-                    const productos = await this.getAll();
+                    const [status, message, productos] = await this.getAll();
                     const newProducts = productos.filter(item=>item.id!==id);
                     await fs.promises.writeFile(this.path.concat('', this.nameFile), JSON.stringify(newProducts, null, 2));
                     return ['200', "Producto eliminnado", null];
@@ -113,8 +117,6 @@ class ProductManager{
             if(fs.existsSync(this.path.concat('', this.nameFile))){
                 const [status, message, productos] = await this.getAll();
                 const productPos = productos.findIndex(elm=>elm.id === id);
-                console.log("el indice es ", productPos);
-                console.log(productos[productPos])
                 if (productos[productPos]){
                     productos[productPos] = {
                         id:id,
